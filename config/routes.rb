@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  root 'homepage#index'
   resources :restaurants
   resources :votes
+  get 'reset_votes' => 'reset_votes#get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

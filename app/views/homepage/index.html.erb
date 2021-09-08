@@ -1,0 +1,12 @@
+<p>
+  access to vote page : 
+  <%= link_to 'Vote', votes_path %>
+</p>
+<p>
+  access to restaurant page :
+  <%= link_to 'Restaurant', restaurants_path %>
+</p>
+<p>
+  start vote (will reset previous vote):
+  <%= link_to 'Reset votes', 'reset_votes', class: "btn btn-info", method: 'get', remote: true %>
+</p>
