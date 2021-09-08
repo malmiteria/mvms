@@ -1,4 +1,5 @@
 class HomepageController < ApplicationController
-    def index
-    end
+  def index
+    @winner = Restaurant.most_voted
+  end
 end
